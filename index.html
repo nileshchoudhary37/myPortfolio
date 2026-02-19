@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilesh Choudhary | Senior Java Developer</title>
+
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #111827;
+      --primary: #6366f1;
+      --accent: #22d3ee;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: radial-gradient(1200px 600px at top, #111827, var(--bg));
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: auto;
+      padding: 5rem 1.5rem 4rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .actions a {
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 0.9rem 1.4rem;
+      border-radius: 12px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      color: #020617;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .actions a.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .actions a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      letter-spacing: -0.5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, var(--card));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+    }
+
+    .card h3 { margin-bottom: 0.6rem; }
+
+    .card h3 a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .card h3 a:hover {
+      border-bottom: 1px solid var(--accent);
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5rem; }
+
+    .tags span {
+      display: inline-block;
+      margin: 0.25rem;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.8rem;
+      border-radius: 999px;
+      background: rgba(99,102,241,0.15);
+      border: 1px solid rgba(99,102,241,0.35);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nilesh Choudhary</h1>
+  <p>
+    Senior Java Developer with strong experience in Spring Boot, Microservices, and
+    enterprise-scale systems. Currently working at TCS (Client: JPMorgan Chase),
+    building high-performance, secure, and scalable backend platforms.
+  </p>
+   <div class="actions">
+    <a href="mailto:nileshchoudhary.dev@gmail.com">Contact Me</a>
+    <a href="https://github.com/nileshchoudhary37?tab=repositories" target="_blank" class="secondary">GitHub</a>
+    <a href="https://www.linkedin.com/in/nilesh-kumar-choudhary-1b90681b6/" target="_blank" class="secondary">LinkedIn</a>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>
+        <a href="https://voluble-douhua-2765c4.netlify.app/" target="_blank">
+          Global COVID-19 Map Dashboard
+        </a>
+      </h3>
+      <div class="meta">JavaScript · Mapbox · Real-time Data</div>
+      <p>
+        Interactive dashboard visualizing global COVID-19 cases using latitude and
+        longitude mapping with real-time updates.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>
+        <a href="https://spicyfoodcorner.netlify.app/" target="_blank">
+          KFC Clone
+        </a>
+      </h3>
+      <div class="meta">HTML · CSS · JavaScript · Node.js</div>
+      <p>
+        Full-stack food ordering clone with authentication, CRUD operations,
+        and cloud-based storage.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Education & Awards</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>B.Tech — Electronics & Communication</h3>
+      <div class="meta">Asansol Engineering College · GPA 9.06 / 10</div>
+      <p>Graduated with strong foundations in engineering and problem solving.</p>
+    </div>
+
+    <div class="card">
+      <h3>Awards & Recognition</h3>
+      <ul>
+        <li>
+          <a href="assets/On_The_Spot_Award.pdf" style="color:#a5b4fc; text-decoration:none;" target="_blank">
+            On-the-Spot Award — TCS (Sep 2024)
+          </a>
+        </li>
+        <li>
+          <a href="assets/Appreciation_Certificate.pdf" style="color:#a5b4fc; text-decoration:none;" target="_blank">
+            Appreciation Certificate — TCS (Dec 2024)
+          </a>
+        </li>
+        <li>
+          <a href="#" style="color:#a5b4fc; text-decoration:none;">
+            Nominated twice for Best Performer Award
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Nilesh Choudhary · Built for scale, performance, and impact
+</footer>
+
+</body>
+</html>
