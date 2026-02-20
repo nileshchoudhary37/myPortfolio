@@ -112,6 +112,11 @@
 @media (max-width: 768px) {
   .hero-slide {
     height: 300px;
+    flex-direction: column;
+  }
+
+  .hero-slide video {
+    width: 100%;
   }
 
   .overlay {
