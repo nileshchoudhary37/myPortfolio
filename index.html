@@ -152,6 +152,8 @@
       font-size: 0.9rem;
     }
   </style>
+  <link rel="stylesheet" href="css/hero-slider.css">
+
 </head>
 
 <body>
@@ -180,6 +182,35 @@
 
   <section id="projects">
     <h2>Projects</h2>
+    
+
+    <!-- ===== VIDEO HERO ===== -->
+    <div class="hero-video-slider">
+
+      <div class="hero-slide active">
+        <video class="project-video" src="assets/Smart-E-CommerceApp.mp4" muted loop></video>
+        <div class="overlay">
+          <h3>Smart E-Commerce Mobile App</h3>
+          <p>React-Native · Firebase · Android Studio</p>
+        </div>
+      </div>
+
+      <div class="hero-slide">
+        <video class="project-video" src="assets/bookStoreApp.mp4" muted loop></video>
+        <div class="overlay">
+          <h3>Book Store App</h3>
+          <p>React-Native · JavaScript · Real-Time API</p>
+        </div>
+      </div>
+
+      <button class="hero-prev">&#10094;</button>
+      <button class="hero-next">&#10095;</button>
+
+      <div class="hero-dots"></div>
+
+    </div>
+
+
     <div class="grid">
 
       <div class="card">
@@ -249,6 +280,7 @@
     © 2026 Nilesh Choudhary · Built for scale, performance, and impact
   </footer>
 
+  <script src="js/hero-slider.js"></script>
 </body>
 
 </html>

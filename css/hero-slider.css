@@ -1,0 +1,121 @@
+/* ===== HERO VIDEO SLIDER ===== */
+
+.hero-video-slider {
+  position: relative;
+  max-width: 1000px;
+  margin-top: 2.5rem;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.hero-slide {
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-slide video {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Glass Overlay */
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(14px);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 70%;
+}
+
+.overlay h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Arrows */
+.hero-video-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 0.7rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.hero-video-slider button:hover {
+  background: var(--primary);
+}
+
+.hero-prev {
+  left: 20px;
+}
+.hero-next {
+  right: 20px;
+}
+
+/* Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dots span {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-dots span.active {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-slide {
+    height: 300px;
+  }
+
+  .overlay {
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
